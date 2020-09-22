@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rainer Chiang</title>
+    <link>https://rainerchiang.github.io/</link>
+    <description>Recent content on Rainer Chiang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>[Rainer Chiang](/) &amp;#183; Theme [Simpleness](https://github.com/RainerChiang/simpleness) Powered by [Hugo](https://gohugo.io/)</copyright>
+    <lastBuildDate>Tue, 22 Sep 2020 11:02:37 +0800</lastBuildDate><atom:link href="https://rainerchiang.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Projects</title>
+      <link>https://rainerchiang.github.io/projects/</link>
+      <pubDate>Tue, 22 Sep 2020 11:18:41 +0800</pubDate>
+      
+      <guid>https://rainerchiang.github.io/projects/</guid>
+      <description>Hugo Theme  Simpleness  A pretty concise but complete Hugo theme.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://rainerchiang.github.io/about/</link>
+      <pubDate>Tue, 22 Sep 2020 11:18:33 +0800</pubDate>
+      
+      <guid>https://rainerchiang.github.io/about/</guid>
+      <description>About me This is Rainer Chiang, sometimes whisper here.
+Milestone  September 22nd, 2020  Build my personal blog using Simpleness on GitHub Page.</description>
+    </item>
+    
+    <item>
+      <title>Hello Hugo</title>
+      <link>https://rainerchiang.github.io/posts/2020-09-22-hello-hugo/</link>
+      <pubDate>Tue, 22 Sep 2020 11:02:37 +0800</pubDate>
+      
+      <guid>https://rainerchiang.github.io/posts/2020-09-22-hello-hugo/</guid>
+      <description>Simpleness Simpleness is a theme for Hugo that is ported from niklasbuschmann&amp;rsquo;s contrast-hugo.
+Features  MathJax suport Google Analytics supported Comment systems include: disqus, valine  TODO  Table of content Pagination for posts  </description>
+    </item>
+    
+  </channel>
+</rss>
