@@ -106,7 +106,7 @@
 
   <div class="comments">
 
-  <div class="disqus">
+  <div class="comments-item">
     <div id="disqus_thread"></div>
     <script>
       window.addEventListener("load", () => {
@@ -127,12 +127,27 @@
 
 
 
-  <div class="valine" >
+  <div class="comments-item" >
+    
+    
+    
+    <div id="vcomments"></div>
     <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
     <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-    
-    
-    
+    <script type="text/javascript">
+      new Valine({
+          el: '#vcomments',
+          highlight: false,
+          lang: "en",
+          appId: "CXhRxgF18xcqkQ6ylD56iJC5-MdYXbMMI",
+          appKey: "N0uSp4sS3sxcEbaFgINUHYiy",
+          placeholder: "Say Something......",
+          requiredFields: ["nick"],
+          avatar: "robohash",
+          visitor:  true ,
+          recordIP: true
+      });
+    </script>
   </div>
 
 </div>
@@ -155,7 +170,6 @@
 
   
 </div>
-
 
 <script src="/js/lazyload.min.js"></script>
 <script>
