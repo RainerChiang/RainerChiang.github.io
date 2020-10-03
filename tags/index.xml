@@ -7,13 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>[Rainer Chiang](/) &amp;#183; Theme [Simpleness](https://github.com/RainerChiang/simpleness) Powered by [Hugo](https://gohugo.io/)</copyright>
-    <lastBuildDate>Tue, 22 Sep 2020 11:02:37 +0800</lastBuildDate><atom:link href="https://rainerchiang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Oct 2020 11:59:19 +0800</lastBuildDate><atom:link href="https://rainerchiang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo</title>
       <link>https://rainerchiang.github.io/tags/hugo/</link>
-      <pubDate>Tue, 22 Sep 2020 11:02:37 +0800</pubDate>
+      <pubDate>Sat, 03 Oct 2020 11:59:19 +0800</pubDate>
       
       <guid>https://rainerchiang.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Valine-Admin</title>
+      <link>https://rainerchiang.github.io/tags/valine-admin/</link>
+      <pubDate>Sat, 03 Oct 2020 11:59:19 +0800</pubDate>
+      
+      <guid>https://rainerchiang.github.io/tags/valine-admin/</guid>
       <description></description>
     </item>
     
