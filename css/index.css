@@ -36,12 +36,20 @@
   }
 
   article a {
+<<<<<<< HEAD
     color: #68f;
+=======
+    color: #58A6FF;
+>>>>>>> 4a5b7cd76725d0dc6bf441aee2d5145bc2788959
   }
 
   .foot a:hover {
     text-decoration: underline;
+<<<<<<< HEAD
     color: #68f;
+=======
+    color: #58A6FF;
+>>>>>>> 4a5b7cd76725d0dc6bf441aee2d5145bc2788959
   }
 }
 
