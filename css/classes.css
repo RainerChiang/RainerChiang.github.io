@@ -1,5 +1,6 @@
 .archive li {
   font-size: 1.1em;
+  list-style: none;
 }
 
 .archive time {
