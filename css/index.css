@@ -18,12 +18,30 @@
     background: #ffffff;
     color: #1c1d22;
   }
+
+  article a {
+    color: #0000EE;
+  }
+
+  .foot a:hover {
+    text-decoration: underline;
+    color: #0000EE;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
   html {
     background: #1c1d22;
     color: #ffffff;
+  }
+
+  article a {
+    color: #68f;
+  }
+
+  .foot a:hover {
+    text-decoration: underline;
+    color: #68f;
   }
 }
 
@@ -57,11 +75,6 @@ a {
 
 a:hover {
   text-decoration: underline;
-}
-
-article a {
-  /* color: #68f; */
-  color: #0000EE;
 }
 
 header time {
@@ -158,6 +171,12 @@ article header {
 article header h1 {
   font-size: 1.8em;
   margin: 0 0 .1em;
+}
+
+article h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.5em;
+  border-bottom: 1px solid #eaecef;
 }
 
 nav {
