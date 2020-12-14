@@ -5,10 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="generator" content="Hugo 0.75.1" />
 
-  <title> Manage Your Comments with Valine-Admin |  Rainer Chiang</title>
+  <title> Valine-Admin: Manage Your Valine Comments |  Rainer Chiang</title>
   <meta name="description" content="Using valine-admin to manage comments powered by valine.">
-  <link rel="stylesheet" href="https://rainerchiang.github.io/css/index.css">
-  <link rel="stylesheet" href="https://rainerchiang.github.io/css/classes.css">
+  <link rel="stylesheet" href="https://rainerchiang.github.io/css/simpleness.css">
   <link rel="canonical" href="https://rainerchiang.github.io/posts/2020-10-03-manage-your-comments-with-valine-admin/">
   <link rel="alternate" type="application/rss+xml" href="" title="Rainer Chiang">
   
@@ -48,17 +47,10 @@
   
 </header>
 
-<article id="article">
+<article class="article">
   <header>
-    
-      <i class="fas fa-folder"></i>
-      
-      <a href="/categories/whisper">Whisper</a>
-      &nbsp;
-      
-    
+    <h1 style="text-align: center;" >Valine-Admin: Manage Your Valine Comments</h1>
 
-    <h1 style="text-align: center;" >Manage Your Comments with Valine-Admin</h1>
     <div class="post-meta">
     
       <time datetime="2020-10-03T11:59:19&#43;08:00">October 03, 2020</time> &nbsp; 
@@ -69,7 +61,7 @@
     
     
       <i class="far fa-eye"></i>
-      <span id="/posts/2020-10-03-manage-your-comments-with-valine-admin/" class="leancloud_visitors" data-flag-title="Manage Your Comments with Valine-Admin">
+      <span id="/posts/2020-10-03-manage-your-comments-with-valine-admin/" class="leancloud_visitors" data-flag-title="Valine-Admin: Manage Your Valine Comments">
           <span class="leancloud-visitors-count">  </span>
       </span> &nbsp;
     
@@ -87,10 +79,37 @@
       23 s
       &nbsp;
     
+
+    
+      <i class="fas fa-folder"></i>
+      
+      <a href="/categories/whisper">Whisper</a>
+      &nbsp;
+      
+    
     </div>
   </header>
 
-  <h2 id="valine-admin">Valine Admin</h2>
+  
+  <div class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#valine-admin">Valine Admin</a></li>
+    <li><a href="#leancloud-国际版">LeanCloud 国际版</a></li>
+    <li><a href="#valine">Valine</a></li>
+    <li><a href="#配置-valine-admin">配置 Valine Admin</a>
+      <ul>
+        <li><a href="#评论管理系统">评论管理系统</a></li>
+        <li><a href="#邮件通知">邮件通知</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>  
+  </div>
+   
+
+  <div class="text">
+    <h2 id="valine-admin">Valine Admin</h2>
 <p>新版本的 valine 评论系统取消了对邮件通知的支持，高兴的是 <a href="https://github.com/DesertsP">DesertsP</a> 开发了针对 valine 的评论管理系统 <a href="https://github.com/DesertsP/Valine-Admin">Valine-Admin</a>。</p>
 <p>但随着 LeanCloud 控制流的改版，Valine-Admin 安装文档也有点过时了，下面是我成功安装 Valine-Admin 的过程记录，以供参考。</p>
 <h2 id="leancloud-国际版">LeanCloud 国际版</h2>
@@ -258,13 +277,15 @@
 </ol>
 <p>到此，完成全部的安装操作，可以愉快地使用 Valine 评论系统了。</p>
 
+  </div>
 
-  
   <footer>
-    <hr>
+    <hr class="end-line">
+
+    
+
     
     <div class="post-tags">
-    
       <i class="fas fa-tags"></i>
       
         <a href="/tags/hugo">Hugo</a>
@@ -273,28 +294,27 @@
         <a href="/tags/valine-admin">Valine-Admin</a>
         &nbsp;
       
-    
     </div>
+    
+
+    
+    
+    <div class="releated-posts">
+      <h3>Related Posts</h3>
+      
+      <i class="fas fa-paperclip"></i>
+      <a href="/posts/2020-09-22-hello-hugo/">Hello Hugo</a>
+      <br>
+      
+    </div>
+    
   </footer>
-  
-
-  
-
-<div class="releated-post">
-  <h3>Related Posts</h3>
-  
-  <i class="fas fa-paperclip"></i>
-  <a href="/posts/2020-09-22-hello-hugo/">Hello Hugo</a>
-  <br>
-  
-</div>
-
 
   <div class="comments">
 
 
 
-  <div class="comments-item" >
+  <div class="comments-item comments-valine" >
     
     
     
@@ -332,10 +352,6 @@
 </article>
 
 
-
-  
-  
-  
 </body>
 <div class="foot">
   
