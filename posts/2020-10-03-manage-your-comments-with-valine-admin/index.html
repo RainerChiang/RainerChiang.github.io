@@ -1,63 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="generator" content="Hugo 0.75.1" />
-
-  <title> Valine-Admin: Manage Your Valine Comments |  Rainer Chiang</title>
+  <title> Valine-Admin: Manage Your Valine Comments | Rainer Chiang </title>
   <meta name="description" content="Using valine-admin to manage comments powered by valine.">
-  <link rel="stylesheet" href="https://rainerchiang.github.io/css/simpleness.css">
-  <link rel="canonical" href="https://rainerchiang.github.io/posts/2020-10-03-manage-your-comments-with-valine-admin/">
+  <link rel="stylesheet" href="https://RainerChiang.github.io/css/simpleness.css">
+  <link rel="canonical" href="https://RainerChiang.github.io/posts/2020-10-03-manage-your-comments-with-valine-admin/">
   <link rel="alternate" type="application/rss+xml" href="" title="Rainer Chiang">
   
   
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-</head>
-
-<body>
-  <header class="menus">
   
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-162425220-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
 
-  <nav >
+  
+</head>
+<body class="container">
+  <nav class="navigation">
+  <div class="nav-left">
     
-    <a href="/"> Home</a>
-    
-    <a href="/projects/"> Projects</a>
-    
-    <a href="/about/"> About</a>
-    
-  </nav>
-
-  <nav class="fontawesome">
+    <div class="nav-item nav-title">
+      <a href="https://RainerChiang.github.io/"> Rainer Chiang</a>
+    </div>
+    <div class="nav-item nav-menu">
+      
+      <a href="/projects/"> Projects</a>
+      
+      <a href="/about/"> About</a>
+      
+    </div>
+  </div>
+  <div class="nav-item nav-right fontawesome">
     
     <a href="https://github.com/RainerChiang" target="_blank">
-        <i title="GitHub" class="fab fa-github"></i>
+      <i title="GitHub" class="fab fa-github"></i>
     </a>
     
     
-    <a href="https://rainerchiang.github.io/index.xml" target="_blank">
-        <i title="RSS" class="fas fa-rss"></i>
+    <a href="https://RainerChiang.github.io/index.xml" target="_blank">
+      <i title="RSS" class="fas fa-rss"></i>
     </a>
     
-  </nav>
+  </div>
+</nav>
   
-  
-  <div class="hidden description">The blog of Rainer Chiang, he writes here sometimes.</div>
-  
-</header>
-
-<article class="article">
-  <header>
+<article class="post">
+  <header class="post-header">
     <h1 style="text-align: center;" >Valine-Admin: Manage Your Valine Comments</h1>
-
-    <div class="post-meta">
+    <div class="post-metadata">
     
       <time datetime="2020-10-03T11:59:19&#43;08:00">October 03, 2020</time> &nbsp; 
     
-
-    Rainer Chiang &nbsp;
-
     
     
       <i class="far fa-eye"></i>
@@ -66,20 +73,17 @@
       </span> &nbsp;
     
     
-
     
       <i class="far fa-clock"></i>
       
       
       
-
       
         6 min
       
-      31 s
+      24 s
       &nbsp;
     
-
     
       <i class="fas fa-folder"></i>
       
@@ -91,7 +95,8 @@
   </header>
 
   
-  <div class="toc">
+  <div class="post-toc">
+    <div class="post-toc-title">Contents</div>
     <nav id="TableOfContents">
   <ul>
     <li><a href="#valine-admin">Valine Admin</a></li>
@@ -104,16 +109,16 @@
       </ul>
     </li>
   </ul>
-</nav>  
+</nav>
   </div>
-   
+  
 
-  <div class="text">
+  <div class="post-text">
     <h2 id="valine-admin">Valine Admin</h2>
-<p>新版本的 valine 评论系统取消了对邮件通知的支持，高兴的是 <a href="https://github.com/DesertsP">DesertsP</a> 开发了针对 valine 的评论管理系统 <a href="https://github.com/DesertsP/Valine-Admin">Valine-Admin</a>。</p>
+<p>新版本的 valine 评论系统取消了对邮件通知的支持，<a href="https://github.com/DesertsP">DesertsP</a> 开发了针对 valine 的评论管理系统 <a href="https://github.com/DesertsP/Valine-Admin">Valine-Admin</a>。</p>
 <p>但随着 LeanCloud 控制流的改版，Valine-Admin 安装文档也有点过时了，下面是我成功安装 Valine-Admin 的过程记录，以供参考。</p>
 <h2 id="leancloud-国际版">LeanCloud 国际版</h2>
-<p>我用的是 LeanCloud 国际版，使用邮箱即可注册，不用实名认证。</p>
+<p>LeanCloud 的国际版，使用邮箱即可注册，不用实名认证。</p>
 <p>对一个个人静态博客来说，其免费版完全够用了。</p>
 <p>注册地址是：<a href="https://console.leancloud.app/login.html#/signup">https://console.leancloud.app/login.html#/signup</a></p>
 <h2 id="valine">Valine</h2>
@@ -123,9 +128,7 @@
 <blockquote>
 <p>内容参考自 <a href="https://deserts.io/valine-admin-document/">Valine Admin 配置手册</a></p>
 </blockquote>
-<ol>
-<li>配置环境变量</li>
-</ol>
+<h4 id="1-配置环境变量">1. 配置环境变量</h4>
 <p>选择「云引擎」-&gt;「设置」-&gt;「自定义环境变量」，增添如下环境变量：</p>
 <table>
 <thead>
@@ -185,30 +188,22 @@
 <li><code>ADMIN_URL</code> 在「云引擎」-&gt;「设置」-&gt;「云引擎域名」中设置添加，如图所示。这项 URL 用于进入评论管理界面。</li>
 </ul>
 <p><img src="https://i.loli.net/2020/10/03/Q519Kg8uLD7XsNM.png" alt="cloud-engin.png"></p>
-<ol start="2">
-<li>部署 Valine-Admin 的代码到云引擎中</li>
-</ol>
+<h4 id="2-部署-valine-admin-的代码到云引擎中">2. 部署 Valine-Admin 的代码到云引擎中</h4>
 <p><img src="https://i.loli.net/2020/10/03/4J6hV7vA3ReXgkL.png" alt="deploy.png"></p>
 <p><img src="https://i.loli.net/2020/10/03/WhM8tNHU4xVgDuP.png" alt="deploy1.png"></p>
 <p>如图所示，进入控制台后，选择「云引擎」-&gt;「部署」-&gt;「部署项目」-&gt;「Git部署」，点击「配置Git」，粘贴并保存 Valine-Admin 的项目地址 <code>https://github.com/DesertsP/Valine-Admin.git</code>。</p>
 <p><img src="https://i.loli.net/2020/10/03/Su6MqircltBv7Yj.png" alt="deploy2.png"></p>
 <p>完成后，在「手动部署」中点击部署即可。</p>
-<ol start="3">
-<li>进入评论管理</li>
-</ol>
+<h4 id="3-进入评论管理">3. 进入评论管理</h4>
 <p>首先通过你设置的 <code>ADMIN_URL</code> 链接再加上 <code>/sign-up</code> 进入账号设置界面，即 <code>https://xyz.avosapps.us/sign-up</code>。</p>
 <p>在设置好账号和密码后，即可登录评论管理界面，如下所示：</p>
 <p><img src="https://i.loli.net/2020/10/03/auCbD1Wxtil4POr.png" alt="comments.png"></p>
-<ol start="4">
-<li>定时任务</li>
-</ol>
+<h4 id="4-定时任务">4. 定时任务</h4>
 <p>详细参见 <a href="https://deserts.io/valine-admin-document/">Valine Admin Document</a>，不过由于 LeanCloud 后来又更改了 <a href="https://leancloud.cn/docs/leanengine_plan.html#hash633315134">休眠策略</a>，定时任务策略已经不再起效。</p>
 <p>可以通过查看云引擎的日志，查看相关记录。</p>
 <h3 id="邮件通知">邮件通知</h3>
 <p>在设置好评论管理系统后，还需要设置通知邮件模板，以便发送通知邮件。</p>
-<ol>
-<li>再次回到环境变量设置，添加如下环境变量</li>
-</ol>
+<h4 id="1-再次回到环境变量设置添加如下环境变量">1. 再次回到环境变量设置，添加如下环境变量</h4>
 <table>
 <thead>
 <tr>
@@ -241,30 +236,7 @@
 </tbody>
 </table>
 <p><code>MAIL_TEMPLATE</code> 模板代码如下：</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;border-top:2px solid #12ADDB;box-shadow:0 1px 3px #AAAAAA;line-height:180%;padding:0 15px 12px;margin:50px auto;font-size:12px;&#34;</span>&gt;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;border-top:2px solid #12ADDB;box-shadow:0 1px 3px #AAAAAA;line-height:180%;padding:0 15px 12px;margin:50px auto;font-size:12px;&#34;</span>&gt;
 	&lt;<span style="color:#f92672">h2</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;border-bottom:1px solid #DDD;font-size:14px;font-weight:normal;padding:13px 0 10px 8px;&#34;</span>&gt;
 		您在&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text-decoration:none;color: #12ADDB;&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;${SITE_URL}&#34;</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span>&gt; ${SITE_NAME} &lt;/<span style="color:#f92672">a</span>&gt;上的评论有了新的回复
 	&lt;/<span style="color:#f92672">h2</span>&gt;
@@ -283,25 +255,8 @@
 		&lt;/<span style="color:#f92672">p</span>&gt;
 	&lt;/<span style="color:#f92672">div</span>&gt;
 &lt;/<span style="color:#f92672">div</span>&gt;
-</code></pre></td></tr></table>
-</div>
-</div><p><code>MAIL_TEMPLATE_ADMIN</code> 模板代码如下：</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;border-top:2px solid #12ADDB;box-shadow:0 1px 3px #AAAAAA;line-height:180%;padding:0 15px 12px;margin:50px auto;font-size:12px;&#34;</span>&gt;
+</code></pre></div><p><code>MAIL_TEMPLATE_ADMIN</code> 模板代码如下：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;border-top:2px solid #12ADDB;box-shadow:0 1px 3px #AAAAAA;line-height:180%;padding:0 15px 12px;margin:50px auto;font-size:12px;&#34;</span>&gt;
 	&lt;<span style="color:#f92672">h2</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;border-bottom:1px solid #DDD;font-size:14px;font-weight:normal;padding:13px 0 10px 8px;&#34;</span>&gt;
 		您在&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text-decoration:none;color: #12ADDB;&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;${SITE_URL}&#34;</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span>&gt; ${SITE_NAME} &lt;/<span style="color:#f92672">a</span>&gt;上的文章有了新的评论
 	&lt;/<span style="color:#f92672">h2</span>&gt;
@@ -312,18 +267,19 @@
 	&lt;<span style="color:#f92672">p</span>&gt;您可以点击&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text-decoration:none; color:#12addb&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;${POST_URL}&#34;</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span>&gt; 查看回复的完整內容 &lt;/<span style="color:#f92672">a</span>&gt;&lt;<span style="color:#f92672">br</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;
 	&lt;/<span style="color:#f92672">div</span>&gt;
 &lt;/<span style="color:#f92672">div</span>&gt;
-</code></pre></td></tr></table>
-</div>
-</div><ol start="2">
-<li>回到部署，点击 <strong>重启</strong>。</li>
-</ol>
+</code></pre></div><h4 id="2-回到部署点击-重启">2. 回到部署，点击 <strong>重启</strong>。</h4>
 <p>到此，完成全部的安装操作，可以愉快地使用 Valine 评论系统了。</p>
 
   </div>
 
-  <footer>
-    <hr class="end-line">
-
+  <footer class="post-footer">
+    
+    <div class="post-lastmod">
+      <time datetime="2021-05-14T14:28:37&#43;08:00">
+        update @ May 14, 2021
+      </time>
+      <p></p>
+    </div>
     
 
     
@@ -341,8 +297,8 @@
 
     
     
-    <div class="releated-posts">
-      <h3>Related Posts</h3>
+    <div class="related-posts">
+      <h4>Related Posts</h4>
       
       <i class="fas fa-paperclip"></i>
       <a href="/posts/2020-09-22-hello-hugo/">Hello Hugo</a>
@@ -351,7 +307,8 @@
     </div>
     
   </footer>
-
+  
+  <div class="comments">
   <div class="comments">
 
 
@@ -390,42 +347,60 @@
   </div>
 
 </div>
-
+  </div>
 </article>
 
-
+  <div class="foot">
+  
+  &copy; 2020 - 2021 &#183;
+  <a href="/"> Rainer Chiang </a> &#183;
+  Theme <a href="https://github.com/RainerChiang/simpleness">Simpleness</a> Powered by <a href="https://gohugo.io/">Hugo</a> &#183;
+  <a href="#"><i class="fas fa-chevron-up"></i></a>
+</div>
 </body>
-<div class="foot">
-  
-  
-    &copy; 2020 - 2021 &#183; 
-    <a href="/">Rainer Chiang</a> · Theme <a href="https://github.com/RainerChiang/simpleness">Simpleness</a> Powered by <a href="https://gohugo.io/">Hugo</a> &#183;
-    <a href="#"><i class="fas fa-chevron-up"></i></a>
-  
-
-  
-  
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-162425220-2', 'auto');
-	
-	ga('send', 'pageview');
-}
+  <script src="/js/lazyload.min.js"></script>
+<script>
+  var lazyImage = new LazyLoad({container: document.getElementById('article')});
 </script>
 
-  
-</div>
 
-<script src="/js/lazyload.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
 <script>
-  var lazyImage = new LazyLoad({
-    container: document.getElementById('article')
-  });
+    (function() {
+        var $toc = $('#TableOfContents');
+        if ($toc.length > 0) {
+            var $window = $(window);
+
+            function onScroll(){
+                var currentScroll = $window.scrollTop();
+                var h = $('.post-text h1, .post-text h2, .post-text h3, .post-text h4, .post-text h5, .post-text h6');
+                var id = "";
+                h.each(function (i, e) {
+                    e = $(e);
+                    if (e.offset().top - 10 <= currentScroll) {
+                        id = e.attr('id');
+                    }
+                });
+                var active = $toc.find('a.active');
+                if (active.length == 1 && active.eq(0).attr('href') == '#' + id) return true;
+
+                active.each(function (i, e) {
+                    $(e).removeClass('active').siblings('ul').hide();
+                });
+                $toc.find('a[href="#' + id + '"]').parentsUntil('#TableOfContents').each(function (i, e) {
+                    $(e).children('a').addClass('active').siblings('ul').show();
+                });
+            }
+
+            $window.on('scroll', onScroll);
+            $(document).ready(function() {
+                $toc.find('a').parent('li').find('ul').hide();
+                onScroll();
+                document.getElementsByClassName('post-toc')[0].style.display = '';
+            });
+        }
+    })();
 </script>
 
 

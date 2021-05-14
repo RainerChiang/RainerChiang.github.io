@@ -2,37 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on Rainer Chiang</title>
-    <link>https://rainerchiang.github.io/tags/hugo/</link>
+    <link>https://RainerChiang.github.io/tags/hugo/</link>
     <description>Recent content in Hugo on Rainer Chiang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>[Rainer Chiang](/) &amp;#183; Theme [Simpleness](https://github.com/RainerChiang/simpleness) Powered by [Hugo](https://gohugo.io/)</copyright>
-    <lastBuildDate>Sat, 03 Oct 2020 11:59:19 +0800</lastBuildDate><atom:link href="https://rainerchiang.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Oct 2020 11:59:19 +0800</lastBuildDate><atom:link href="https://RainerChiang.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Valine-Admin: Manage Your Valine Comments</title>
-      <link>https://rainerchiang.github.io/posts/2020-10-03-manage-your-comments-with-valine-admin/</link>
+      <link>https://RainerChiang.github.io/posts/2020-10-03-manage-your-comments-with-valine-admin/</link>
       <pubDate>Sat, 03 Oct 2020 11:59:19 +0800</pubDate>
       
-      <guid>https://rainerchiang.github.io/posts/2020-10-03-manage-your-comments-with-valine-admin/</guid>
-      <description>Valine Admin 新版本的 valine 评论系统取消了对邮件通知的支持，高兴的是 DesertsP 开发了针对 valine 的评论管理系统 Valine-Admin。
+      <guid>https://RainerChiang.github.io/posts/2020-10-03-manage-your-comments-with-valine-admin/</guid>
+      <description>Valine Admin 新版本的 valine 评论系统取消了对邮件通知的支持，DesertsP 开发了针对 valine 的评论管理系统 Valine-Admin。
 但随着 LeanCloud 控制流的改版，Valine-Admin 安装文档也有点过时了，下面是我成功安装 Valine-Admin 的过程记录，以供参考。
-LeanCloud 国际版 我用的是 LeanCloud 国际版，使用邮箱即可注册，不用实名认证。
+LeanCloud 国际版 LeanCloud 的国际版，使用邮箱即可注册，不用实名认证。
 对一个个人静态博客来说，其免费版完全够用了。
 注册地址是：https://console.leancloud.app/login.html#/signup
 Valine Valine 评论系统的安装和使用，请直接参考其使用文档：Valine - 一款快速、简洁且高效的无后端评论系统。
 配置 Valine Admin 评论管理系统  内容参考自 Valine Admin 配置手册
-  配置环境变量  选择「云引擎」-&amp;gt;「设置」-&amp;gt;「自定义环境变量」，增添如下环境变量：
-   变量 示例 说明     SITE_NAME Chiang&amp;rsquo;s Blog [必填]博客名称   SITE_URL https://rainerchiang.github.io [必填]首页地址   SMTP_SERVICE QQ [新版支持]邮件服务提供商，支持 QQ、163、126、Gmail 以及 更多   SMTP_USER xyz@qq.</description>
+ 1. 配置环境变量 选择「云引擎」-&amp;gt;「设置」-&amp;gt;「自定义环境变量」，增添如下环境变量：
+   变量 示例 说明     SITE_NAME Chiang&amp;rsquo;s Blog [必填]博客名称   SITE_URL https://rainerchiang.github.io [必填]首页地址   SMTP_SERVICE QQ [新版支持]邮件服务提供商，支持 QQ、163、126、Gmail 以及 更多   SMTP_USER xyz@qq.com [必填]SMTP登录用户   SMTP_PASS xyzPasswd [必填]SMTP登录密码（QQ邮箱需要获取独立密码）   SENDER_NAME Rainer Chiang [必填]发件人   SENDER_EMAIL xyz@qq.</description>
     </item>
     
     <item>
       <title>Hello Hugo</title>
-      <link>https://rainerchiang.github.io/posts/2020-09-22-hello-hugo/</link>
+      <link>https://RainerChiang.github.io/posts/2020-09-22-hello-hugo/</link>
       <pubDate>Tue, 22 Sep 2020 11:02:37 +0800</pubDate>
       
-      <guid>https://rainerchiang.github.io/posts/2020-09-22-hello-hugo/</guid>
-      <description>Simpleness Simpleness is a theme for Hugo that is ported from niklasbuschmann&amp;rsquo;s contrast-hugo.
-Features  MathJax suport Google Analytics supported Comment systems include: disqus, valine  TODO  Table of content Pagination for posts  </description>
+      <guid>https://RainerChiang.github.io/posts/2020-09-22-hello-hugo/</guid>
+      <description>Hugo Theme: Simpleness Simpleness is a theme for Hugo ported from niklasbuschmann&amp;rsquo;s theme: contrast-hugo.
+In addition, the hugo-theme-minos is referred.
+Live Demo  https://themes.gohugo.io/theme/simpleness/ https://rainerchiang.github.io/simpleness/ https://rainerchiang.github.io  Features  MathJax suport Google Analytics supported Comment systems include: disqus, valine1  TODO  Table of content Pagination for posts    https://valine.js.org/ &amp;#x21a9;&amp;#xfe0e;
+   </description>
     </item>
     
   </channel>
