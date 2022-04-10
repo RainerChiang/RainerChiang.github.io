@@ -3,7 +3,7 @@
   <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="Hugo 0.75.1" />
+  <meta name="generator" content="Hugo 0.96.0" />
   <title> Valine-Admin: Manage Your Valine Comments | Rainer Chiang </title>
   <meta name="description" content="Using valine-admin to manage comments powered by valine.">
   <link rel="stylesheet" href="https://RainerChiang.github.io/css/simpleness.css">
@@ -26,7 +26,6 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
-
   
 </head>
 <body class="container">
@@ -46,6 +45,7 @@ if (!doNotTrack) {
   </div>
   <div class="nav-item nav-right fontawesome">
     
+    
     <a href="https://github.com/RainerChiang" target="_blank">
       <i title="GitHub" class="fab fa-github"></i>
     </a>
@@ -57,6 +57,7 @@ if (!doNotTrack) {
     
   </div>
 </nav>
+
   
 <article class="post">
   <header class="post-header">
@@ -236,38 +237,38 @@ if (!doNotTrack) {
 </tbody>
 </table>
 <p><code>MAIL_TEMPLATE</code> 模板代码如下：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;border-top:2px solid #12ADDB;box-shadow:0 1px 3px #AAAAAA;line-height:180%;padding:0 15px 12px;margin:50px auto;font-size:12px;&#34;</span>&gt;
-	&lt;<span style="color:#f92672">h2</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;border-bottom:1px solid #DDD;font-size:14px;font-weight:normal;padding:13px 0 10px 8px;&#34;</span>&gt;
-		您在&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text-decoration:none;color: #12ADDB;&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;${SITE_URL}&#34;</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span>&gt; ${SITE_NAME} &lt;/<span style="color:#f92672">a</span>&gt;上的评论有了新的回复
-	&lt;/<span style="color:#f92672">h2</span>&gt;
-	${PARENT_NICK} 同学，您曾发表评论：
-	&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;padding:0 12px 0 12px;margin-top:18px&#34;</span>&gt;
-		&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;background-color: #f5f5f5;padding: 10px 15px;margin:18px 0;word-wrap:break-word;&#34;</span>&gt;
-			 ${PARENT_COMMENT} 
-		&lt;/<span style="color:#f92672">div</span>&gt;
-		&lt;<span style="color:#f92672">p</span>&gt;&lt;<span style="color:#f92672">strong</span>&gt; ${NICK} &lt;/<span style="color:#f92672">strong</span>&gt;回复说：&lt;/<span style="color:#f92672">p</span>&gt;
-		&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;background-color: #f5f5f5;padding: 10px 15px;margin:18px 0;word-wrap:break-word;&#34;</span>&gt;
-			${COMMENT}
-		&lt;/<span style="color:#f92672">div</span>&gt;
-		&lt;<span style="color:#f92672">p</span>&gt;您可以点击&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text-decoration:none; color:#12addb&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;${POST_URL}&#34;</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span>&gt; 查看回复的完整內容&lt;/<span style="color:#f92672">a</span>&gt;，欢迎再次光临
-			&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text-decoration:none; color:#12addb&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;${SITE_URL}&#34;</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span>&gt; ${SITE_NAME}&lt;/<span style="color:#f92672">a</span>&gt;。
-			&lt;<span style="color:#f92672">br</span>&gt;
-		&lt;/<span style="color:#f92672">p</span>&gt;
-	&lt;/<span style="color:#f92672">div</span>&gt;
-&lt;/<span style="color:#f92672">div</span>&gt;
-</code></pre></div><p><code>MAIL_TEMPLATE_ADMIN</code> 模板代码如下：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;border-top:2px solid #12ADDB;box-shadow:0 1px 3px #AAAAAA;line-height:180%;padding:0 15px 12px;margin:50px auto;font-size:12px;&#34;</span>&gt;
-	&lt;<span style="color:#f92672">h2</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;border-bottom:1px solid #DDD;font-size:14px;font-weight:normal;padding:13px 0 10px 8px;&#34;</span>&gt;
-		您在&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text-decoration:none;color: #12ADDB;&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;${SITE_URL}&#34;</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span>&gt; ${SITE_NAME} &lt;/<span style="color:#f92672">a</span>&gt;上的文章有了新的评论
-	&lt;/<span style="color:#f92672">h2</span>&gt;
-	&lt;<span style="color:#f92672">p</span>&gt;&lt;<span style="color:#f92672">strong</span>&gt; ${NICK} &lt;/<span style="color:#f92672">strong</span>&gt;回复说：&lt;/<span style="color:#f92672">p</span>&gt;
-	&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;background-color: #f5f5f5;padding: 10px 15px;margin:18px 0;word-wrap:break-word;&#34;</span>&gt;
-		${COMMENT}
-	&lt;/<span style="color:#f92672">div</span>&gt;
-	&lt;<span style="color:#f92672">p</span>&gt;您可以点击&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text-decoration:none; color:#12addb&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;${POST_URL}&#34;</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span>&gt; 查看回复的完整內容 &lt;/<span style="color:#f92672">a</span>&gt;&lt;<span style="color:#f92672">br</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;
-	&lt;/<span style="color:#f92672">div</span>&gt;
-&lt;/<span style="color:#f92672">div</span>&gt;
-</code></pre></div><h4 id="2-回到部署点击-重启">2. 回到部署，点击 <strong>重启</strong>。</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;border-top:2px solid #12ADDB;box-shadow:0 1px 3px #AAAAAA;line-height:180%;padding:0 15px 12px;margin:50px auto;font-size:12px;&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">h2</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;border-bottom:1px solid #DDD;font-size:14px;font-weight:normal;padding:13px 0 10px 8px;&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>		您在&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text-decoration:none;color: #12ADDB;&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;${SITE_URL}&#34;</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span>&gt; ${SITE_NAME} &lt;/<span style="color:#f92672">a</span>&gt;上的评论有了新的回复
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#f92672">h2</span>&gt;
+</span></span><span style="display:flex;"><span>	${PARENT_NICK} 同学，您曾发表评论：
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;padding:0 12px 0 12px;margin-top:18px&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;background-color: #f5f5f5;padding: 10px 15px;margin:18px 0;word-wrap:break-word;&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>			 ${PARENT_COMMENT} 
+</span></span><span style="display:flex;"><span>		&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">p</span>&gt;&lt;<span style="color:#f92672">strong</span>&gt; ${NICK} &lt;/<span style="color:#f92672">strong</span>&gt;回复说：&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;background-color: #f5f5f5;padding: 10px 15px;margin:18px 0;word-wrap:break-word;&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>			${COMMENT}
+</span></span><span style="display:flex;"><span>		&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#f92672">p</span>&gt;您可以点击&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text-decoration:none; color:#12addb&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;${POST_URL}&#34;</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span>&gt; 查看回复的完整內容&lt;/<span style="color:#f92672">a</span>&gt;，欢迎再次光临
+</span></span><span style="display:flex;"><span>			&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text-decoration:none; color:#12addb&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;${SITE_URL}&#34;</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span>&gt; ${SITE_NAME}&lt;/<span style="color:#f92672">a</span>&gt;。
+</span></span><span style="display:flex;"><span>			&lt;<span style="color:#f92672">br</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span></code></pre></div><p><code>MAIL_TEMPLATE_ADMIN</code> 模板代码如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;border-top:2px solid #12ADDB;box-shadow:0 1px 3px #AAAAAA;line-height:180%;padding:0 15px 12px;margin:50px auto;font-size:12px;&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">h2</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;border-bottom:1px solid #DDD;font-size:14px;font-weight:normal;padding:13px 0 10px 8px;&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>		您在&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text-decoration:none;color: #12ADDB;&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;${SITE_URL}&#34;</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span>&gt; ${SITE_NAME} &lt;/<span style="color:#f92672">a</span>&gt;上的文章有了新的评论
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#f92672">h2</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">p</span>&gt;&lt;<span style="color:#f92672">strong</span>&gt; ${NICK} &lt;/<span style="color:#f92672">strong</span>&gt;回复说：&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;background-color: #f5f5f5;padding: 10px 15px;margin:18px 0;word-wrap:break-word;&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>		${COMMENT}
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">p</span>&gt;您可以点击&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text-decoration:none; color:#12addb&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;${POST_URL}&#34;</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span>&gt; 查看回复的完整內容 &lt;/<span style="color:#f92672">a</span>&gt;&lt;<span style="color:#f92672">br</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span></code></pre></div><h4 id="2-回到部署点击-重启">2. 回到部署，点击 <strong>重启</strong>。</h4>
 <p>到此，完成全部的安装操作，可以愉快地使用 Valine 评论系统了。</p>
 
   </div>
@@ -318,7 +319,8 @@ if (!doNotTrack) {
     
     
     <div id="vcomments"></div>
-    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    
+    <script src="//code.bdstatic.com/npm/leancloud-storage@4.12.0/dist/av-min.js"></script>
     <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
     <script type="text/javascript">
       new Valine({
@@ -331,6 +333,7 @@ if (!doNotTrack) {
           requiredFields: ["nick","mail"],
           avatar: "robohash",
           visitor:  true ,
+          serverURLs: "https://CXhRxgF1.api.lncldglobal.com",
           recordIP: true
       });
     </script>
@@ -352,7 +355,7 @@ if (!doNotTrack) {
 
   <div class="foot">
   
-  &copy; 2020 - 2021 &#183;
+  &copy; 2020 - 2022 &#183;
   <a href="/"> Rainer Chiang </a> &#183;
   Theme <a href="https://github.com/RainerChiang/simpleness">Simpleness</a> Powered by <a href="https://gohugo.io/">Hugo</a> &#183;
   <a href="#"><i class="fas fa-chevron-up"></i></a>
