@@ -82,7 +82,7 @@ if (!doNotTrack) {
       
         6 min
       
-      24 s
+      23 s
       &nbsp;
     
     
@@ -117,7 +117,7 @@ if (!doNotTrack) {
   <div class="post-text">
     <h2 id="valine-admin">Valine Admin</h2>
 <p>新版本的 valine 评论系统取消了对邮件通知的支持，<a href="https://github.com/DesertsP">DesertsP</a> 开发了针对 valine 的评论管理系统 <a href="https://github.com/DesertsP/Valine-Admin">Valine-Admin</a>。</p>
-<p>但随着 LeanCloud 控制流的改版，Valine-Admin 安装文档也有点过时了，下面是我成功安装 Valine-Admin 的过程记录，以供参考。</p>
+<p>但随着 LeanCloud 控制流的改版，Valine-Admin 安装文档也有点过时了，下面是我成功安装 Valine-Admin 的过程记录，仅供参考。</p>
 <h2 id="leancloud-国际版">LeanCloud 国际版</h2>
 <p>LeanCloud 的国际版，使用邮箱即可注册，不用实名认证。</p>
 <p>对一个个人静态博客来说，其免费版完全够用了。</p>
@@ -189,13 +189,13 @@ if (!doNotTrack) {
 <li><code>ADMIN_URL</code> 在「云引擎」-&gt;「设置」-&gt;「云引擎域名」中设置添加，如图所示。这项 URL 用于进入评论管理界面。</li>
 </ul>
 <p><img src="https://i.loli.net/2020/10/03/Q519Kg8uLD7XsNM.png" alt="cloud-engin.png"></p>
-<h4 id="2-部署-valine-admin-的代码到云引擎中">2. 部署 Valine-Admin 的代码到云引擎中</h4>
+<h4 id="2-在云引擎中部署-valine-admin">2. 在云引擎中部署 Valine-Admin</h4>
 <p><img src="https://i.loli.net/2020/10/03/4J6hV7vA3ReXgkL.png" alt="deploy.png"></p>
 <p><img src="https://i.loli.net/2020/10/03/WhM8tNHU4xVgDuP.png" alt="deploy1.png"></p>
 <p>如图所示，进入控制台后，选择「云引擎」-&gt;「部署」-&gt;「部署项目」-&gt;「Git部署」，点击「配置Git」，粘贴并保存 Valine-Admin 的项目地址 <code>https://github.com/DesertsP/Valine-Admin.git</code>。</p>
 <p><img src="https://i.loli.net/2020/10/03/Su6MqircltBv7Yj.png" alt="deploy2.png"></p>
 <p>完成后，在「手动部署」中点击部署即可。</p>
-<h4 id="3-进入评论管理">3. 进入评论管理</h4>
+<h4 id="3-评论管理">3. 评论管理</h4>
 <p>首先通过你设置的 <code>ADMIN_URL</code> 链接再加上 <code>/sign-up</code> 进入账号设置界面，即 <code>https://xyz.avosapps.us/sign-up</code>。</p>
 <p>在设置好账号和密码后，即可登录评论管理界面，如下所示：</p>
 <p><img src="https://i.loli.net/2020/10/03/auCbD1Wxtil4POr.png" alt="comments.png"></p>
@@ -268,8 +268,8 @@ if (!doNotTrack) {
 </span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">p</span>&gt;您可以点击&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text-decoration:none; color:#12addb&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;${POST_URL}&#34;</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span>&gt; 查看回复的完整內容 &lt;/<span style="color:#f92672">a</span>&gt;&lt;<span style="color:#f92672">br</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;
 </span></span><span style="display:flex;"><span>	&lt;/<span style="color:#f92672">div</span>&gt;
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
-</span></span></code></pre></div><h4 id="2-回到部署点击-重启">2. 回到部署，点击 <strong>重启</strong>。</h4>
-<p>到此，完成全部的安装操作，可以愉快地使用 Valine 评论系统了。</p>
+</span></span></code></pre></div><h4 id="2-回到部署点击-重启">2. 回到部署，点击 <strong>重启</strong></h4>
+<p>到此，完成全部的安装操作，可以愉快地使用 Valine 进行评论了。</p>
 
   </div>
 

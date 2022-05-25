@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Rainer Chiang</title>
+    <link>https://RainerChiang.github.io/tags/linux/</link>
+    <description>Recent content in Linux on Rainer Chiang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 24 May 2022 10:30:45 +0800</lastBuildDate><atom:link href="https://RainerChiang.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Set Up Static ARP Table Entry</title>
+      <link>https://RainerChiang.github.io/posts/2022-05-24-static-arp-table-entry/</link>
+      <pubDate>Tue, 24 May 2022 10:30:45 +0800</pubDate>
+      
+      <guid>https://RainerChiang.github.io/posts/2022-05-24-static-arp-table-entry/</guid>
+      <description>前不久，由于需要对局域网内的各个主机配置静态 ARP 缓存列表，重新学习了 ARP 相关知识，记录如下。
+ARP 协议 简介 ARP，即 Address Resolution Protocol 地址解析协议。在给定 IP 地址时，用于解析目标主机的 MAC（Media Access Control） 物理地址，是数据链路层协议。
+ARP Cache，ARP 缓存，是包含一条或者多条 IP 地址到 MAC 地址的映射表项（Table Entry）的列表，存储的是目标主机到其网络邻居的网络与物理地址映射，包括网关的地址映射信息。
+ARP 工作过程 假设主机 A 和 B 在同一网段，主机 A 需要向主机 B 发送数据，则具体的地址解析过程如下：
+ 主机 A 首先查询自己的 ARP 缓存列表是否存在主机 B 的 IP 和 MAC地址映射。存在，则直接依据映射关系对 IP 数据包进行帧封装，并向主机 B 发送数据帧；否则，在同网段广播目标地址为主机 B 的 IP、目标 MAC 地址为全 0 的「ARP 请求」报文。 同网段的其他主机收到「ARP 请求」报文后，比对请求报文中的目标 IP 地址。和本机 IP 不同，则直接丢弃；相同，则向主机 A 发送携带自身 IP 和 MAC 地址映射关系的单播 「ARP 响应」报文。 主机 A 收到主机 B 的响应报文后，更新自己的 ARP 缓存列表，接着依据此映射关系向主机 B 发送数据帧。 根据主机 A 中配置的 ARP 表项生存时间，在生存时间计时结束后，重复上述过程。  ARP 欺骗攻击 ARP 协议是建立在网络中各个主机互相信任基础上的，网络中的主机可自主发送 ARP 响应报文，其他主机收到响应报文时不检测该报文的真实性即将其记入本机 ARP 缓存中。</description>
+    </item>
+    
+  </channel>
+</rss>

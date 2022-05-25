@@ -6,7 +6,16 @@
     <description>Recent content in Categories on Rainer Chiang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 03 Oct 2020 11:59:19 +0800</lastBuildDate><atom:link href="https://RainerChiang.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 May 2022 10:30:45 +0800</lastBuildDate><atom:link href="https://RainerChiang.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Notes</title>
+      <link>https://RainerChiang.github.io/categories/notes/</link>
+      <pubDate>Tue, 24 May 2022 10:30:45 +0800</pubDate>
+      
+      <guid>https://RainerChiang.github.io/categories/notes/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Whisper</title>
       <link>https://RainerChiang.github.io/categories/whisper/</link>

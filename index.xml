@@ -6,7 +6,20 @@
     <description>Recent content on Rainer Chiang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 03 Oct 2020 11:59:19 +0800</lastBuildDate><atom:link href="https://RainerChiang.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 May 2022 10:30:45 +0800</lastBuildDate><atom:link href="https://RainerChiang.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Set Up Static ARP Table Entry</title>
+      <link>https://RainerChiang.github.io/posts/2022-05-24-static-arp-table-entry/</link>
+      <pubDate>Tue, 24 May 2022 10:30:45 +0800</pubDate>
+      
+      <guid>https://RainerChiang.github.io/posts/2022-05-24-static-arp-table-entry/</guid>
+      <description>前不久，由于需要对局域网内的各个主机配置静态 ARP 缓存列表，重新学习了 ARP 相关知识，记录如下。
+ARP 协议 简介 ARP，即 Address Resolution Protocol 地址解析协议。在给定 IP 地址时，用于解析目标主机的 MAC（Media Access Control） 物理地址，是数据链路层协议。
+ARP Cache，ARP 缓存，是包含一条或者多条 IP 地址到 MAC 地址的映射表项（Table Entry）的列表，存储的是目标主机到其网络邻居的网络与物理地址映射，包括网关的地址映射信息。
+ARP 工作过程 假设主机 A 和 B 在同一网段，主机 A 需要向主机 B 发送数据，则具体的地址解析过程如下：
+ 主机 A 首先查询自己的 ARP 缓存列表是否存在主机 B 的 IP 和 MAC地址映射。存在，则直接依据映射关系对 IP 数据包进行帧封装，并向主机 B 发送数据帧；否则，在同网段广播目标地址为主机 B 的 IP、目标 MAC 地址为全 0 的「ARP 请求」报文。 同网段的其他主机收到「ARP 请求」报文后，比对请求报文中的目标 IP 地址。和本机 IP 不同，则直接丢弃；相同，则向主机 A 发送携带自身 IP 和 MAC 地址映射关系的单播 「ARP 响应」报文。 主机 A 收到主机 B 的响应报文后，更新自己的 ARP 缓存列表，接着依据此映射关系向主机 B 发送数据帧。 根据主机 A 中配置的 ARP 表项生存时间，在生存时间计时结束后，重复上述过程。  ARP 欺骗攻击 ARP 协议是建立在网络中各个主机互相信任基础上的，网络中的主机可自主发送 ARP 响应报文，其他主机收到响应报文时不检测该报文的真实性即将其记入本机 ARP 缓存中。</description>
+    </item>
+    
     <item>
       <title>Valine-Admin: Manage Your Valine Comments</title>
       <link>https://RainerChiang.github.io/posts/2020-10-03-manage-your-comments-with-valine-admin/</link>
@@ -14,7 +27,7 @@
       
       <guid>https://RainerChiang.github.io/posts/2020-10-03-manage-your-comments-with-valine-admin/</guid>
       <description>Valine Admin 新版本的 valine 评论系统取消了对邮件通知的支持，DesertsP 开发了针对 valine 的评论管理系统 Valine-Admin。
-但随着 LeanCloud 控制流的改版，Valine-Admin 安装文档也有点过时了，下面是我成功安装 Valine-Admin 的过程记录，以供参考。
+但随着 LeanCloud 控制流的改版，Valine-Admin 安装文档也有点过时了，下面是我成功安装 Valine-Admin 的过程记录，仅供参考。
 LeanCloud 国际版 LeanCloud 的国际版，使用邮箱即可注册，不用实名认证。
 对一个个人静态博客来说，其免费版完全够用了。
 注册地址是：https://console.leancloud.app/login.html#/signup
@@ -41,8 +54,8 @@ You can visit the example repository on Github.</description>
       
       <guid>https://RainerChiang.github.io/about/</guid>
       <description>About me This is Rainer Chiang, who sometimes whispers here.
-Milestone  September 22nd, 2020  Build my personal blog using Simpleness on GitHub Page.
- May 14th, 2021  Change the style of hugo theme simpleness.</description>
+Milestone  May 14th, 2021  Change the style of hugo theme simpleness.
+ September 22nd, 2020  Build my personal blog using Simpleness on GitHub Page.</description>
     </item>
     
     <item>
@@ -52,7 +65,7 @@ Milestone  September 22nd, 2020  Build my personal blog using Simpleness on GitH
       
       <guid>https://RainerChiang.github.io/posts/2020-09-22-hello-hugo/</guid>
       <description>Hugo Theme: Simpleness Simpleness is a theme for Hugo ported from niklasbuschmann&amp;rsquo;s theme: contrast-hugo.
-In addition, the hugo-theme-minos is referred.
+In addition, the hugo-theme-minos is referred to.
 Live Demo  https://themes.gohugo.io/theme/simpleness/ https://rainerchiang.github.io/simpleness/ https://rainerchiang.github.io  Features  MathJax suport Google Analytics supported Comment systems include: disqus, valine1  TODO  Table of content Pagination for posts    https://valine.js.org/&amp;#160;&amp;#x21a9;&amp;#xfe0e;
    </description>
     </item>
