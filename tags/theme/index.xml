@@ -9,10 +9,10 @@
     <lastBuildDate>Tue, 22 Sep 2020 11:02:37 +0800</lastBuildDate><atom:link href="https://RainerChiang.github.io/tags/theme/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hello Hugo</title>
-      <link>https://RainerChiang.github.io/posts/2020-09-22-hello-hugo/</link>
+      <link>https://RainerChiang.github.io/posts/hello-hugo/</link>
       <pubDate>Tue, 22 Sep 2020 11:02:37 +0800</pubDate>
       
-      <guid>https://RainerChiang.github.io/posts/2020-09-22-hello-hugo/</guid>
+      <guid>https://RainerChiang.github.io/posts/hello-hugo/</guid>
       <description>Hugo Theme: Simpleness Simpleness is a theme for Hugo ported from niklasbuschmann&amp;rsquo;s theme: contrast-hugo.
 In addition, the hugo-theme-minos is referred to.
 Live Demo  https://themes.gohugo.io/theme/simpleness/ https://rainerchiang.github.io/simpleness/ https://rainerchiang.github.io  Features  MathJax suport Google Analytics supported Comment systems include: disqus, valine1  TODO  Table of content Pagination for posts    https://valine.js.org/&amp;#160;&amp;#x21a9;&amp;#xfe0e;

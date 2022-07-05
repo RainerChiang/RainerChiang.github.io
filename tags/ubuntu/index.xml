@@ -9,10 +9,10 @@
     <lastBuildDate>Tue, 24 May 2022 10:30:45 +0800</lastBuildDate><atom:link href="https://RainerChiang.github.io/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Set Up Static ARP Table Entry</title>
-      <link>https://RainerChiang.github.io/posts/2022-05-24-static-arp-table-entry/</link>
+      <link>https://RainerChiang.github.io/posts/set-up-static-arp-table-entry/</link>
       <pubDate>Tue, 24 May 2022 10:30:45 +0800</pubDate>
       
-      <guid>https://RainerChiang.github.io/posts/2022-05-24-static-arp-table-entry/</guid>
+      <guid>https://RainerChiang.github.io/posts/set-up-static-arp-table-entry/</guid>
       <description>前不久，由于需要对局域网内的各个主机配置静态 ARP 缓存列表，重新学习了 ARP 相关知识，记录如下。
 ARP 协议 简介 ARP，即 Address Resolution Protocol 地址解析协议。在给定 IP 地址时，用于解析目标主机的 MAC（Media Access Control） 物理地址，是数据链路层协议。
 ARP Cache，ARP 缓存，是包含一条或者多条 IP 地址到 MAC 地址的映射表项（Table Entry）的列表，存储的是目标主机到其网络邻居的网络与物理地址映射，包括网关的地址映射信息。
